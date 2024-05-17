@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const nav = document.querySelector("nav");
-  const mobileNav = document.querySelector("nav.mobile-nav");
-  const menuIcon = document.querySelector(".menu-icon");
-  const closeIcon = document.querySelector(".mobile-menu-container.close-icon");
-  const mobileMenuContainer = document.querySelector(".mobile-menu-container");
+  const [nav, mobileNav, menuIcon, closeIcon, mobileMenuContainer] = [
+    document.querySelector("nav"),
+    document.querySelector("nav.mobile-nav"),
+    document.querySelector(".menu-icon"),
+    document.querySelector(".mobile-menu-container .close-icon"),
+    document.querySelector(".mobile-menu-container"),
+  ];
+
   
   window.addEventListener("scroll", () => {
     if (window.pageYOffset > 60) {
@@ -22,21 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
   closeIcon.addEventListener("click", () => {
     mobileMenuContainer.classList.remove("active");
   });
-});
-
-  // Initialize Swiper
-var swiper = new Swiper("swiper-container", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    // Enable full auto pagination
-    autoPagination: true,
-  },
-  // Add navigation buttons
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });

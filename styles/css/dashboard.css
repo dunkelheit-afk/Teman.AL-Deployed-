@@ -1,0 +1,186 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo{
+    color: #000;
+    font-family: "poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+    /* buat font nya bangggg */
+
+/* bagian konten */
+
+body {
+    overflow-x: hidden; /* Add this to prevent horizontal scrolling */
+}
+
+.konten {
+    display: flex;
+    flex-wrap: flex;
+    align-items: center;
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 60px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.tombol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sunting{
+    position: relative;
+    width: 160px;
+    height: 48px;
+    text-align: center;
+    font-weight: 500;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+span{
+    background: black;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.sunting:hover {
+    color: #fff; /* membuat teks menjadi putih */
+    background-color: #000; /* membuat background menjadi hitam */
+    transition: 1s;
+}
+
+.keluar:hover {
+    color: #fff;
+    background-color: #000;
+    transition: 0.5s;
+}
+  
+.sunting-profil:hover {
+    color: #fff;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.keluar:hover a {
+    color: #fff;
+  }
+  
+  .sunting-profil:hover a {
+    color: #fff;
+  }
+
+button:hover span {
+    width: 100%;
+    color: white;
+}
+
+.maps {
+    margin: 0 auto; /* Add this to center the maps horizontally */
+    margin-top: 70px;
+    padding-bottom: 0px;
+    width: 80%;
+}
+
+.maps img {
+    display: block; /* Add this to center the image horizontally */
+    margin: 0 auto;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: 100%; /* Add this line to make the image take up the full width of its container */
+    max-width: 100%; /* Add this line to ensure the image doesn't exceed the width of its container */
+}
+
+.maps p {
+    text-align: center; /* Add this to center the paragraph text horizontally */
+    margin-top: 90px;
+    margin-left: 0; /* Reset the left margin */
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%; /* Set the maximum width of the container to 100% */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.container.konten {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 25%;
+}
+
+  .container.konten.gambar,
+  .container.konten.teks {
+    flex: 1 1 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .konten {
+        display: block;
+        align-items: center;
+        justify-content: center;
+     }
+     .gambar{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .teks{
+        margin-top: 20px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     }
+     .tombol{
+        margin-top: 20px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     }
+   }

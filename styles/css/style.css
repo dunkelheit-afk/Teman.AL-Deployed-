@@ -9,6 +9,12 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-image: url('../../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -176,7 +182,7 @@ button:hover {
     padding: 0px;
     flex-basis: 50%;
     -webkit-flex-basis: 50%;
-    background: #00c16e;
+    background: #d7a8cb;
     padding: 100px 50px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -218,7 +224,7 @@ button:hover {
     position: absolute;
     right: -5px;
     top: -5px;
-    background: #62c16e;
+    background: #d7a8cb;
     border-radius: 50px;
     color: #fff;
     text-align: center;
@@ -267,14 +273,14 @@ button:hover {
 }
 
 .w3l-mockup-form input:focus {
-    border-color: #00c16e;
+    border-color: #d7a8cb;
 }
 
 .w3l-mockup-form button {
     font-size: 18px;
     color: #fff;
     width: 100%;
-    background: #00c16e;
+    background: #1f428f;
     border: none;
     padding: 14px 15px;
     font-weight: 500;
@@ -286,7 +292,7 @@ button:hover {
 }
 
 .w3l-mockup-form button:hover {
-    background: #4ca356;
+    background:#d7a8cb;
 }
 
 .w3l-mockup-form .social-icons ul li {

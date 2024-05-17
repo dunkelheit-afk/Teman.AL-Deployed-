@@ -4,7 +4,7 @@
 
 session_start();
 if (isset($_SESSION['SESSION_EMAIL'])) {
-    header("Location: homepage.php");
+    header("Location: homepage");
     die();
 }
 
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'no reply';
-                $mail->Body    = 'Here is the Reset Password link <b><a href="http://localhost/Teman-AL/modules/change-password.php?reset='.$code.'">http://localhost/Teman-AL/modules/change-password.php?reset='.$code.'</a></b>';
+                $mail->Body    = 'Here is the Reset Password link <b><a href="http://localhost/Teman-AL/modules/change-password?reset='.$code.'">http://localhost/Teman-AL/modules/change-password?reset='.$code.'</a></b>';
 
                 $mail->send();
                 echo 'Message has been sent';
@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
 <html lang="zxx">
 
 <head>
-    <title>Login Form - Brave Coder</title>
+    <title>Forgot Password Form</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -102,7 +102,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="w3l_form align-self">
                         <div class="left_grid_info">
-                            <img src="../assets/images/image3.svg" alt="">
+                            <img src="../assets/images/logo.png" alt="">
                         </div>
                     </div>
                     <div class="content-wthree">
@@ -114,7 +114,7 @@ if (isset($_POST['submit'])) {
                             <button name="submit" class="btn" type="submit">Send Reset Link</button>
                         </form>
                         <div class="social-icons">
-                            <p>Back to! <a href="index.php">Login</a>.</p>
+                            <p>Back to! <a href="Login">Login</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ if (isset($_POST['submit'])) {
             $('.alert-close').on('click', function (c) {
                 $('.main-mockup').fadeOut('slow', function (c) {
                     $('.main-mockup').remove();
-                    window.location.href = 'login.php';
+                    window.location.href = '../';
                 });
             });
         });

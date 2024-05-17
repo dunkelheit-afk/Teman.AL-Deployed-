@@ -77,7 +77,7 @@
 <html lang="zxx">
 
 <head>
-    <title>Login Form - Brave Coder</title>
+    <title>Registration Form</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -108,7 +108,7 @@
                     </div>
                     <div class="w3l_form align-self">
                         <div class="left_grid_info">
-                            <img src="../assets/images/image2.svg" alt="">
+                            <img src="../assets/images/logo.png" alt="">
                         </div>
                     </div>
                     <div class="content-wthree">
@@ -123,7 +123,7 @@
                             <button name="submit" class="btn" type="submit">Register</button>
                         </form>
                         <div class="social-icons">
-                            <p>Have an account! <a href="index.php">Login</a>.</p>
+                            <p>Have an account! <a href="Login">Login</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
             $('.alert-close').on('click', function (c) {
                 $('.main-mockup').fadeOut('slow', function (c) {
                     $('.main-mockup').remove();
-                    window.location.href = '../index.php';
+                    window.location.href = '../';
                 });
             });
         });

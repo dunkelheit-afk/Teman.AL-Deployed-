@@ -53,12 +53,12 @@ body, html {
 
 .btn:hover {
     background-color: #D9D9D9; /* change background color on hover to a light red */
-    box-shadow: 0px 10px 20px 0px rgba(255, 0, 0, 0.2); /* add box shadow on hover with a red tint */
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); /* add box shadow on hover with a red tint */
 }
   
   .btn:active {
-    background-color: #ff9999; /* change background color on click to a lighter red */
-    box-shadow: 0px 5px 10px 0px rgba(255, 0, 0, 0.2); /* add box shadow on click with a red tint */
+    background-color: #000000; /* change background color on click to a lighter red */
+    box-shadow: 0px 5px 10px 0px rgba(62, 59, 59, 0.2); /* add box shadow on click with a red tint */
     transform: translateY(2px); /* add translate effect on click */
   }
 
@@ -84,7 +84,7 @@ nav{
 }
 
 nav.scrolled ul{
-    border-radius: 20px;
+    border-radius: 50px;
     border: 5px solid #01B7C5;
     top: 6;
     height: 70px;
@@ -102,11 +102,14 @@ nav.scrolled ul li {
 }
 
 nav.scrolled {
-    background : var(--grey-color);
-    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 8px 8px;
+    background: rgba(var(--grey-color-rgb), 0.8); /* Transparansi 80% */
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.5);
+    border-radius: 70px;
+    margin-top: 20px;
     top: 0;
     padding: 12px;
+    backdrop-filter: blur(10px); /* Efek blur */
+    -webkit-backdrop-filter: blur(10px); /* Efek blur untuk Safari */
 }
 
 nav .judul{
@@ -188,6 +191,11 @@ nav ul li a{
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 40px;
+}
+
+.hero-section .btn{
+    font-family: "Poppins", sans-serif;
+    border-width: 0px;
 }
 
 .hero-section .Right {

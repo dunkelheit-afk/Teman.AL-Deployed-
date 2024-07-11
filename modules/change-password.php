@@ -2,7 +2,7 @@
 
 $msg = "";
 
-include '../includes/config';
+include '../includes/config.php';
 
 if (isset($_GET['reset'])) {
     if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM users WHERE code='{$_GET['reset']}'")) > 0) {
@@ -14,7 +14,7 @@ if (isset($_GET['reset'])) {
                 $query = mysqli_query($conn, "UPDATE users SET password='{$password}', code='' WHERE code='{$_GET['reset']}'");
 
                 if ($query) {
-                    header("Location: Login");
+                    header("Location: Login.php");
                 }
             } else {
                 $msg = "<div class='alert alert-danger'>Password and Confirm Password do not match.</div>";
@@ -24,7 +24,7 @@ if (isset($_GET['reset'])) {
         $msg = "<div class='alert alert-danger'>Reset Link do not match.</div>";
     }
 } else {
-    header("Location: forgot-password");
+    header("Location: forgot-password.php");
 }
 
 ?>

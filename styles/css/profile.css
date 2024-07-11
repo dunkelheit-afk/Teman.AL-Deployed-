@@ -57,3 +57,22 @@ body{
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    /* Edit button */
+#editButton {
+    margin-top: 1rem;
+    background-color: #4CAF50; /* Green */
+    color: #ffffff;
+    border: none;
+    border-radius: 0.35rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Save changes button */
+  #saveChangesButton {
+    margin-top: 1rem;
+    background-color: #2196F3; /* Blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 0.35rem;
+    padding: 0.5rem 1rem;
+  }

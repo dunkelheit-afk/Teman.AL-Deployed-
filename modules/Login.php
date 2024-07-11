@@ -82,7 +82,7 @@
                     </div>
                     <div class="content-wthree">
                         <h2>Login Now</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p>Selamat datang kembali! Mohon masukkan informasi login Anda untuk mengakses akun Anda.</p>
                         <?php echo $msg; ?>
                         <form action="" method="post">
                             <input type="email" class="email" name="email" placeholder="Enter Your Email" required>

@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'no reply';
-                $mail->Body    = 'Here is the Reset Password link <b><a href="http://localhost/Teman-AL/modules/change-password?reset='.$code.'">http://localhost/Teman-AL/modules/change-password?reset='.$code.'</a></b>';
+                $mail->Body    = 'Here is the Reset Password link <b><a href="http://teman-al.com/modules/change-password?reset='.$code.'">http://teman-al.com/modules/change-password?reset='.$code.'</a></b>';
 
                 $mail->send();
                 echo 'Message has been sent';

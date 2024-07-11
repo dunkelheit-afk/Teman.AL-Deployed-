@@ -71,6 +71,12 @@ header{
     width: 100%;
 }
 
+header{
+    background: #FFF;
+    height: 100vh;
+    width: 100%;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -84,7 +90,7 @@ nav{
 }
 
 nav.scrolled ul{
-    border-radius: 20px;
+    border-radius: 50px;
     border: 5px solid #01B7C5;
     top: 6;
     height: 70px;
@@ -101,31 +107,27 @@ nav.scrolled ul li {
     text-decoration: none;
 }
 
-nav.scrolled {
-    background : var(--grey-color);
-    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 8px 8px;
-    top: 0;
-    padding: 12px;
+nav.scrolled .logo {
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
-nav .judul{
+nav.scrolled {
+    background: rgba(var(--grey-color-rgb), 0.8); /* Transparansi 80% */
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    margin-top: 20px;
+    top: 0;
+    padding: 12px;
+    backdrop-filter: blur(10px); /* Efek blur */
+}
+
+nav .logo{
     color: #000;
     font-family: "Poppins", sans-serif;
     font-size: 40px;
-    font-weight: 700;  
-    margin-right: auto;
+    font-weight: 700;
 }
-
-.Logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .Logo img {
-    width: 100px;
-    height: 100px;
-  }
 
 nav ul{
     display: flex;
@@ -370,11 +372,11 @@ nav ul li a{
 /* bul buat scroll kalem yak ngebug wae */
 
 .bgkonten2 {
-    margin-top: 200px;
+    margin-top: 0px;
     width: 100%;
     height: auto;
     background-color: #F6F6F6;
-    margin-left: 0;
+    margin-left: 100px;
     margin-right: 0;
     display: flex;
 }
@@ -388,7 +390,6 @@ footer .bgkonten2 {
 
 footer .bgkonten2 .link-container{
     max-width: 100%;
-    margin-left: 50px;
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -400,6 +401,7 @@ footer .bgkonten2 .link-container{
 
 footer {
     display: flex;
+    background-color: #F6F6F6;
     flex-direction: column;
     align-items: center;
 }
@@ -417,11 +419,12 @@ footer h5 {
 footer a {
     text-decoration: none;
     color: #262020;
+    margin-right: 0px;
 }
 
 footer br {
     color: #000;
-    font-family: Poppins;
+    font-family: "Poppins" sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;

@@ -54,7 +54,17 @@
                         //Content
                         $mail->isHTML(true);                                  //Set email format to HTML
                         $mail->Subject = 'no reply';
-                        $mail->Body    = 'Here is the verification link <b><a href="http://localhost/Teman-AL/modules/?verification='.$code.'">http://localhost/Teman-AL/modules/?verification='.$code.'<a></b>';
+                        $mail->Body = '
+                        Hello ' . $name . ',
+
+                        <br><br>Terimakasih telah mendaftarkan akun anda di Teman.AL. Kami ingin mengonfirmasi bahwa akun Anda telah berhasil dibuat.
+                        <br>Untuk memverifikasi akun Anda, klik tautan “Verifikasi Akun” di bawah:
+                        <br><br>
+                        <a href="http://teman-al.com/modules/Login.php?verification=' . $code . '">Verifikasi Akun</a>
+                        <br><br>
+                        Jika Anda mengalami masalah saat masuk ke akun Anda, jangan ragu untuk menghubungi kami di <a href="mailto:temanalpkm2024@gmail.com">temanalpkm2024@gmail.com</a>.
+                        <br><br>Best regards,<br>Macipir Team PKM-KC 2024';
+
 
                         $mail->send();
                         echo 'Message has been sent';
@@ -113,7 +123,7 @@
                     </div>
                     <div class="content-wthree">
                         <h2>Register Now</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p>Selamat datang! Mohon isi formulir pendaftaran di bawah ini untuk membuat akun baru.</p>
                         <?php echo $msg; ?>
                         <form action="" method="post">
                             <input type="text" class="name" name="name" placeholder="Enter Your Name" value="<?php if (isset($_POST['submit'])) { echo $name; } ?>" required>
@@ -144,7 +154,19 @@
             });
         });
     </script>
-
+    <script>
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementsByClassName('password')[0];
+        var confirmPasswordInput = document.getElementsByClassName('confirm-password')[0];
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            confirmPasswordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+            confirmPasswordInput.type = "password";
+        }
+    }
+    </script>
 </body>
 
 </html>

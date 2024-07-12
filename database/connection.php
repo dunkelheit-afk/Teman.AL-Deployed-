@@ -4,8 +4,8 @@ function getConnectionStatus() {
     date_default_timezone_set('Asia/Jakarta');
 
     $host = 'localhost';
-    $username = 'root';
-    $password = '';
+    $username = 'u932941492_Teman_AL';
+    $password = 'Dr49m3t0h377';
     $database = 'esp32_status';
 
     // Create connection

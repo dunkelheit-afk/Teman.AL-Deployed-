@@ -34,7 +34,7 @@ body, html {
 }
 
 .btn{
-    padding: 32px 32px;
+    padding: 30px 90px;
     border-radius: 999px;
     color: #000000;
     display: inline-flex;
@@ -45,8 +45,7 @@ body, html {
     box-shadow: 0px 5px 15px 0px;
     justify-content: center;
     align-items: center;
-    margin-right: 70px;
-    margin-left: 25px;
+    margin-left: 20px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
     text-decoration: none;
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* add transition effect */
@@ -110,12 +109,23 @@ nav.scrolled {
     padding: 12px;
 }
 
-nav .logo{
+nav .judul{
     color: #000;
     font-family: "Poppins", sans-serif;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 700;  
+    margin-right: auto;
 }
+
+.Logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Logo img {
+    width: 100px;
+    height: 100px;
+  }
 
 nav ul{
     display: flex;
@@ -378,6 +388,7 @@ footer .bgkonten2 {
 
 footer .bgkonten2 .link-container{
     max-width: 100%;
+    margin-left: 50px;
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -406,7 +417,6 @@ footer h5 {
 footer a {
     text-decoration: none;
     color: #262020;
-    margin-right: 20px;
 }
 
 footer br {
@@ -440,6 +450,7 @@ footer p {
     width: 100%;
     text-align: center;
 }
+
 
 
 
@@ -519,6 +530,17 @@ footer p {
     align-items: center;
     justify-content: center;
     gap: 100px;
+    }
+    .team-content{
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, auto));
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 4rem;
     }
 }
 
@@ -602,8 +624,11 @@ footer p {
       text-decoration: none;
       font-size: 18px;
     }
+    .box:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
     footer{
-        text-align: center;
         width: 100%;
     }
   }
@@ -649,10 +674,23 @@ footer p {
         display: flex;
         justify-content: center;
     }
-
+    .team-content{
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, auto));
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
     footer .bgkonten2 .link-container {
         grid-template-columns: none;
-        flex: 0;
+        margin-left: 0px;
+    }
+    footer{
+        text-align: center;
     }
 
     footer h5 {
@@ -668,5 +706,8 @@ footer p {
     }
     .wrapper {
         margin-top: 100px;
+    }
+    footer p{
+        margin-top: 50px;
     }
   }

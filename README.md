@@ -12,4 +12,6 @@ People Related in making This Website:
 1. Adam Monhardi
 2. Arsyad Faturrahman
 3. Salim Ammar Rasyid
+
+
 # Teman.AL-Deployed-

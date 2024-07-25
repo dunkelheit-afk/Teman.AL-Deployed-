@@ -24,20 +24,20 @@
     <body>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">
-                <h1 id="logo"><img src="../assets/images/logo.png">Teman.AL</h1>
+            <div class="border-end" id="sidebar-wrapper">
+                <div class="sidebar-heading">
+                <h1 id="logo"><img src="../assets/images/temanal1.png">Teman.AL</h1>
                 </div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../modules/homepage">Dashboard</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../includes/ComingSoon">Info Device</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="../modules/profile">Data Pengguna</a>
+                    <a class="list-group-item list-group-item-action list-group-item p-3" href="../modules/homepage">Dashboard</a>
+                    <a class="list-group-item list-group-item-action list-group-item p-3" href="../includes/ComingSoon">Info Device</a>
+                    <a class="list-group-item list-group-item-action list-group-item p-3" href="../modules/profile">Data Pengguna</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
             <div id="page-content-wrapper">
                 <!-- Top navigation-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <nav class="navbar navbar-expand-lg navbar-light border-bottom">
                     <div class="container-fluid">
                         <button class="btn btn-primary" id="sidebarToggle">Menu</button>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>

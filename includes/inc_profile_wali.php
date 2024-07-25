@@ -16,10 +16,10 @@
 <div class="container-xl px-4 mt-4">
     <!-- Account page navigation-->
     <nav class="nav nav-borders">
-        <a class="nav-link ms-0" href="profile">Profile Pengguna</a>
-        <a class="nav-link active" href="profile_wali">Profile Wali</a>
+        <a class="nav-link ms-0" href="../modules/profile.php">Profile Pengguna</a>
+        <a class="nav-link active" href="#">Profile Wali</a>
         <a class="nav-link" href="security">Keamanan Akun</a>
-        <a class="nav-link" href="qr_code">QR - Code</a>
+        <a class="nav-link" href="../modules/qr_code.php">QR - Code</a>
     </nav>
     <hr class="mt-0 mb-4">
     <div class="row">

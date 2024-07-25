@@ -31,7 +31,7 @@
             $row = mysqli_fetch_assoc($result);
 
             if (empty($row['code'])) {
-                $_SESSION['SESSION_EMAIL'] = $email;
+                $_SESSION['SESSION_EMAIL'] = $row['email'];
                 header("Location: homepage");
             } else {
                 $msg = "<div class='alert alert-info'>First verify your account and try again.</div>";

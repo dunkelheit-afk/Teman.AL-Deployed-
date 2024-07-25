@@ -118,7 +118,7 @@
                     </div>
                     <div class="w3l_form align-self">
                         <div class="left_grid_info">
-                            <img src="../assets/images/logo.png" alt="">
+                            <img src="../assets/images/bubble.png" alt="">
                         </div>
                     </div>
                     <div class="content-wthree">
